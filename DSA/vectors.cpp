@@ -69,9 +69,11 @@ int main()
         cout << x << " ";
     cout << endl;
 
+
+
     // ---------------- CLEAR VECTOR ----------------
     v.clear();
-    cout << "Vector empty? " << v.empty() << endl;
+    cout << "Vector empty? " << v.empty() << endl; // bool, true is empty else false
 
     return 0;
 }

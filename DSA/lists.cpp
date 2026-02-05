@@ -29,17 +29,28 @@ int main()
     {
         cout << x << " ";
     }
+    cout << endl;
     // how to insert on a specific index
     auto it = ls.begin();
     advance(it, 2);
     ls.insert(it, 4);
-    // ls<int>::iterator it=ls.begin; iterator can not be defined because list is not a contigous memory
-    cout << *next(ls.begin(), 2) << endl; // next element after second index
+    cout << "Using next ==> " << *next(ls.begin(), 2) << endl; // next element after second index
     for (auto x : ls)
     {
         cout << x << " ";
     }
     cout << endl;
+    // updating
+    cout << "======= updating operations =========" << endl;
+    ls.front() = 11;
+    // iterator
+    auto it2 = ls.begin();
+    cout << *it2 << endl;
+    advance(it2, 2);
+    *it2 = 10;
+    // Traversing using iterators
+    for (auto it = ls.begin(); it != ls.end(); ++it)
+        cout << *it << " ";
 
     cout << endl;
     ls.pop_front();

@@ -75,4 +75,19 @@ Ensures reliability
     }
     cout << endl;
     cout << "Front element after pop: " << qu.front() << endl;
+
+    //  a queue of strings
+    queue<string> cars;
+
+    // Adding elements to the queue
+    cars.push("Volvo");
+    cars.push("BMW");
+    cars.push("Ford");
+    cars.push("Mazda");
+
+    // Removing the front element (Volvo)
+    cars.pop();
+
+    // Access the front element (Now BMW)
+    cout << cars.front();
 }

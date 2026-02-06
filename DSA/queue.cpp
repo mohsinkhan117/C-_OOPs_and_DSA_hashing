@@ -2,6 +2,33 @@
 using namespace std;
 int main()
 {
+    /*
+    7. Message Queues (Industry-Level)
+
+Examples:
+
+RabbitMQ
+
+Kafka
+
+Amazon SQS
+
+📌 Used in:
+
+Microservices
+
+Distributed systems
+
+Event-driven architectures
+
+Why queue is essential:
+
+Decouples producer & consumer
+
+Handles traffic spikes
+
+Ensures reliability
+    */
     // In queue First in First out FIFO
     // queue cannot be initialized directly bcs it does not have constructor to support list
     // Initialize a deque with the desired elements
